@@ -1,0 +1,54 @@
+.bg {
+    &.bg-red {
+        background-color: $red;
+    }
+
+    &.bg-pale-orange {
+        background-color: $pale-orange;
+    }
+
+    &.bg-weird-green {
+        background-color: $weird-green;
+    }
+
+    &.bg-pastel-orange {
+        background-color: $pastel-orange;
+    }
+
+    &.bg-blue {
+        background-color: $blue;
+    }
+
+    &.bg-kiwi-green {
+        background-color: $kiwi-green;
+    }
+
+    &.bg-light-gold {
+        background-color: $light-gold;
+    }
+
+    &.bg-white-200 {
+        background-color: $white-200;
+    }
+
+    &.bg-brown {
+        background-color: $brown;
+    }
+
+    &.bg-white {
+        background-color: $white;
+    }
+
+    &.bg-gray {
+        background-color: $gray;
+    }
+
+    &.bg-gray-200 {
+        background-color: $gray-200;
+    }
+
+    &:hover {
+        filter: brightness(0.85);
+        transition: all 0.3s ease-out;
+    }
+}

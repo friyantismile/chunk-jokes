@@ -1,0 +1,75 @@
+@import "variable";
+@import "font";
+@import "section";
+@import "card";
+@import "button";
+@import "text";
+@import "bg";
+@import "nav";
+@import "status";
+
+* {
+    font-family: montserrat-regular;
+}
+
+body {
+    margin: 0;
+    background-color: $white-200;
+}
+
+.badge {
+    border-radius: 20px;
+    padding: 2px 18px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.d-grid {
+    display: grid;
+    gap: 2px;
+    grid-template-columns: auto auto auto auto auto;
+}
+.flex-1 {
+    flex: 1;
+}
+.d-flex-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.d-flex-column {
+    display: flex;
+    flex-direction: column;
+}
+.dot {
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot-text {
+    margin-right: -12px;
+    z-index: 6;
+    position: relative;
+    background-color: white;
+}
+.w-80 {
+    width: 80%;
+}
+.line-brown {
+    flex: 1;
+    border-bottom: solid;
+    margin: 17px 10px;
+    position: relative;
+}
+
+.pagination {
+    text-align: end;
+    margin-top: 0px;
+    float: left;
+    width: 100%;
+    margin-top: -29px;
+    margin-left: 6px;
+
+}

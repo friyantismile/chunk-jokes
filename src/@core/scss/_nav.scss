@@ -1,0 +1,110 @@
+.topnav {
+    float: right;
+    background-color: $gray-200;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    text-transform: uppercase;
+    padding: 0 150px;
+    font-family: montserrat-semi-bold;
+    line-height: normal;
+
+    .nav-links {
+        float: right;
+        display: block;
+        color: $white-100;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 15px;
+        letter-spacing: normal;
+        font-weight: 600;
+
+        &:hover {
+            background-color: $brown;
+        }
+    }
+
+    .active {
+        background-color: #04aa6d;
+        color: white;
+    }
+
+    .dropdown {
+        float: right;
+        overflow: hidden;
+        text-transform: uppercase;
+
+        .dropbtn {
+            font-size: 15px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 13px 16px;
+            background-color: inherit;
+            margin: 0;
+            letter-spacing: normal;
+            font-weight: 600;
+            text-transform: uppercase;
+
+            .user {
+                margin-right: 10px;
+            }
+            .caret {
+                margin-left: 10px;
+            }
+        }
+    }
+
+    .dropdown-content-wrapper {
+        display: none;
+        position: absolute;
+        min-width: 194px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content {
+        margin-top: 10px;
+        background-color: $white-100;
+        border-radius: 5px;
+        
+        &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            right: 0.8rem;
+            top: 1px;
+            border-bottom: 10px solid #fff;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;        
+        }
+
+        a {
+            float: none;
+            color: $gray-100;
+            padding: 8px 10px;
+            margin: 0 7px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            font-size: 12px;
+            border-bottom: $white-200 solid 1.5px;
+            text-transform: capitalize;
+
+            &:hover {
+                color: $brown;
+            }
+        }
+    }
+
+    &a:hover,
+    .dropdown:hover .dropbtn {
+        background-color: $brown;
+        color: $white;
+    }
+
+    .dropdown:hover .dropdown-content-wrapper {
+        display: block;
+    }
+}

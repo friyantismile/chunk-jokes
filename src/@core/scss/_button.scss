@@ -1,0 +1,78 @@
+.btn {
+    padding: 8px 20px;
+    border: solid 1px $white-200;
+    color: $brown-100;
+    cursor: pointer;
+    margin: 6px;
+    padding: 10px 20px;
+    text-transform: uppercase; 
+    position: relative;
+
+    &.btn-white {
+        background-color: $white;
+    }
+ 
+    &.btn-outline {
+        background-color: $transparent;
+        border: solid 1px $brown-100;
+        transition: all 0.3s ease-out;
+    }
+
+    &.btn-lg {
+        font-size: 20px;
+        min-width: 185px;
+    }
+
+    &.btn-md {
+        font-size: 17px;
+    }
+
+    &.btn-fixed {
+        min-width: 145px;
+    }
+
+    img{
+        margin-top: 3px;
+        position: absolute;
+        padding-left: 10px
+    }
+
+    .img-start{
+        top: 9px;
+        position: absolute;
+        padding-left: 10px;
+        left: 0;
+    }
+
+    &:hover > .img-end {
+        padding-left: 15px;
+        transition: all 0.3s ease-out;
+    }
+
+    &:hover > .img-start {
+        left: -3px !important;
+        transition: all 0.3s ease-out;
+    }
+}
+
+.links {
+    color: $brown;
+    text-decoration: none;
+    font-weight: 600;
+
+    img{
+        margin-top: 2px;
+        position: absolute;
+        padding-left: 10px
+    }
+
+    &:hover > img {
+        padding-left: 15px;
+        transition: all 0.3s ease-out;
+    }
+}
+
+.btn-rounded {
+    padding: 18px 20px 11px 19px;
+    border-radius: 50%;
+}

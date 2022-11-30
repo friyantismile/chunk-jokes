@@ -1,0 +1,20 @@
+.status-wrapper {
+    margin-top: 10px;
+    width: 100%;
+    float: left;
+
+    .status {
+        float: left;
+        cursor: pointer;
+        text-align: center;
+        margin-left: 5px;
+        img {
+            padding: 6px;
+            border-radius: 50%;
+        }
+        span{
+            font-weight: 600;
+            font-size: 12px;
+        }
+    }
+}
