@@ -27,12 +27,12 @@ function Banner() {
                         <div className="search-result">
                             <ul className="text-gray">
                             {result.map((jk, index) => (
-                                    <li key={jk.id}>
+                                <li key={jk.id}>
                                     <Link to={`/joke/${jk.categories.length > 0 ? jk.categories[0] : 'uncategorized'}/${jk.id}`} className='text-gray'>
                                     <img src="/assets/green-light-copy.png" className='icon'/> {jk.value.substr(0, 20)+'...'}
                                     </Link> 
-                                    </li>
-                                ))}
+                                </li>
+                            ))}
                             </ul>
                         </div>
                     </div>

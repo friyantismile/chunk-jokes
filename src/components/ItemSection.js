@@ -67,25 +67,30 @@ function ItemSection() {
                     imgUrl='/assets/path-copy-7.png'>
                 </Button>
             </div>
-            <div className="section-item">
-                <hr className="bg bg-white" style={{borderStyle: "ridge", marginBottom: '20px'}}></hr>
-                <span className={`badge bg ${BTNCLASS[categoryIndex%7]} text-white`}>{category}</span>
-                <div className="d-flex-row">
-                    {paginatedJokes.map((joke, index) => (
-                        <Card 
-                            key={joke.id+'-'+index}
-                            title={joke.value.substr(0, 10)+'...'}
-                            id={joke.id}
-                            content={joke.value}
-                            category={category}
-                        />
-                    ))}
+            {category ? 
+                <>
+                <div className="section-item">
+                    <hr className="bg bg-white" style={{borderStyle: "ridge", marginBottom: '20px'}}></hr>
+                    <span className={`badge bg ${BTNCLASS[categoryIndex%7]} text-white`}>{category}</span>
+                    <div className="d-flex-row">
+                        {paginatedJokes.map((joke, index) => (
+                            <Card 
+                                key={joke.id+'-'+index}
+                                title={joke.value.substr(0, 10)+'...'}
+                                id={joke.id}
+                                content={joke.value}
+                                category={category}
+                            />
+                        ))}
+                    </div>
                 </div>
-            </div>
-            <div className="section-item text-center">
-                <Button className="btn" btnClass='btn-outline' btnSize='btn-lg' text='View More' imgUrl='/assets/path-copy-7.png' onClick={() => {paginateJokes()}}></Button>
-            </div>
-            <div ref={bottomContainer}></div>
+                <div className="section-item text-center">
+                    <Button className="btn" btnClass='btn-outline' btnSize='btn-lg' text='View More' imgUrl='/assets/path-copy-7.png' onClick={() => {paginateJokes()}}></Button>
+                </div>
+                <div ref={bottomContainer}></div> 
+                </>:
+                <h1 className="text-center text-brown">Please select atleast One Category</h1>
+            }
         </div>
     );
 }

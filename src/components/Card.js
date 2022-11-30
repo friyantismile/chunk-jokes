@@ -12,7 +12,7 @@ function Card(props) {
                 </div>
                 <div className="card-footer">
                     <Link to={`/joke/${props.category}/${props.id}`} className='links'>
-                        See All <img src="/assets/path.png"/>
+                        See Stats <img src="/assets/path.png"/>
                     </Link>
                 </div>
             </div>
